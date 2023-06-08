@@ -1,0 +1,39 @@
+using System;
+
+namespace FizzBuzz 
+{
+	class Project
+	{
+		static void Main()
+		{
+			
+			FizzBuzz(0); // Must enter an integer in the parameter
+		}
+
+		
+		// FizzBuzz Method returns "fizz" if it's divisible by 3, "buzz" if it's divisible by 5, "fizzbuzz" if it's divisible by both, and an empty string if it's divisible by 		// neither
+
+		public string FizzBuzz(int num) 
+		{
+			if (num % 3 == 0) 
+			{
+				return "fizz";
+			}
+
+			else if (num % 5 == 0)
+			{
+				return "buzz";
+			}
+
+			else if (num % 3 == 0 && num % 5 == 0)
+			{
+				return "fizzbuzz";
+			}
+
+			else
+			{
+				return "";
+			}
+		}
+	}
+}
